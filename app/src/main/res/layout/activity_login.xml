@@ -35,7 +35,7 @@
                 android:layout_centerHorizontal="true"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
-                app:lottie_rawRes="@raw/myprofile"
+                app:lottie_rawRes="@raw/profile"
                 app:lottie_speed="3"
 
                 />
