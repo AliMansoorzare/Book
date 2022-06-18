@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+            <LinearLayout
+                android:id="@+id/labeled"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/login_layout"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/base" />
+            </LinearLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/myprofile"
+                app:lottie_speed="3"
+
+                />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edtlogin"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/head"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom"
+            android:hint="نام خود را وارد کنید."
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/btnEnter"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@color/base"
+            android:text="ورود به برنامه"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:button_cornerRadius="10dp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

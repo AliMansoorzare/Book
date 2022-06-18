@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    tools:context=".ProfileFragment">
+
+   <RelativeLayout
+       android:id="@+id/labeled"
+       android:layout_width="match_parent"
+
+       android:layout_height="250dp"
+       android:background="@drawable/login_layout"
+       >
+<com.airbnb.lottie.LottieAnimationView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    app:lottie_autoPlay="true"
+    app:lottie_speed="3"
+    app:lottie_loop="true"
+    app:lottie_rawRes="@raw/myprofile"
+    android:layoutDirection="rtl"
+   android:layout_centerInParent="true"
+
+   />
+
+   </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/labeled"
+       android:orientation="vertical">
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+         android:id="@+id/recyc_profile"/>
+   </LinearLayout>
+
+</RelativeLayout>

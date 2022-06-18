@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+  <EditText
+      android:background="@drawable/search_layout"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:id="@+id/search"
+
+android:drawablePadding="10dp"
+      android:layoutDirection="rtl"
+      android:hint="جستوجو کنید..."
+      android:paddingRight="10dp"
+      android:drawableTint="@color/base"
+      android:drawableRight="@drawable/ic_baseline_search_24"
+      android:textSize="14sp"/>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_below="@+id/search"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/rec_search"/>
+
+</RelativeLayout>
