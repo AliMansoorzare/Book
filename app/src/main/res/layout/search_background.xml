@@ -18,6 +18,11 @@
      android:layout_below="@+id/search_lottie"
      android:layout_centerHorizontal="true"
      android:layout_marginTop="30dp"
+     android:textSize="12sp"
+     android:textColor="@color/black"
+     android:textStyle="bold"
+     android:gravity="center"
+     android:textAlignment="center"
      android:text="نام دانشمند را وارد کنید."/>
 
 </RelativeLayout>

@@ -12,19 +12,19 @@
        android:layout_width="match_parent"
 
        android:layout_height="250dp"
-       android:background="@drawable/login_layout"
-       >
-<com.airbnb.lottie.LottieAnimationView
-    android:layout_width="150dp"
-    android:layout_height="150dp"
-    app:lottie_autoPlay="true"
-    app:lottie_speed="3"
-    app:lottie_loop="true"
-    app:lottie_rawRes="@raw/myprofile"
-    android:layoutDirection="rtl"
-   android:layout_centerInParent="true"
+       android:background="@drawable/login_layout">
 
-   />
+      <com.airbnb.lottie.LottieAnimationView
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:layout_centerInParent="true"
+          android:layoutDirection="rtl"
+          app:lottie_autoPlay="true"
+          app:lottie_loop="true"
+          app:lottie_rawRes="@raw/myprofile"
+          app:lottie_speed="3"
+
+          />
 
    </RelativeLayout>
 

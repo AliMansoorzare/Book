@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".ContentActivity">
+    <RelativeLayout
+        android:id="@+id/labeled"
+        android:layout_width="match_parent"
+
+        android:layout_height="250dp"
+        android:background="@drawable/login_layout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_back"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+          />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/bg_author"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+
+
+
+        app:civ_border_width="2dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/bg_author"
+            android:textSize="16sp"
+            android:id="@+id/name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="آلبرت انیشتین"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/name"
+            android:textSize="12sp"
+            android:id="@+id/disc"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="آلبرت انیشتین"/>
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/labeled"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:lineSpacingExtra="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/name"
+                android:textSize="15sp"
+                android:id="@+id/filled"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="آلبرت انیشتین"/>
+        </androidx.core.widget.NestedScrollView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rippleColor="@color/base"
+            android:id="@+id/fab"
+            android:layout_margin="20sp"
+            android:src="@drawable/ic_baseline_favorite_border_24"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>
