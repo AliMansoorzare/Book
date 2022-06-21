@@ -11,8 +11,9 @@ import android.view.ViewGroup;
 
 import com.google.android.material.tabs.TabLayout;
 
-import rah.agahi.ketab.HomeAdapter;
+
 import rah.agahi.ketab.R;
+import rah.agahi.ketab.adapter.HomeAdapter;
 
 
 public class HomeFragment extends Fragment {
