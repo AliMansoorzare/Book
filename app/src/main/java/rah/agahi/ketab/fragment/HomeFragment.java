@@ -12,8 +12,9 @@ import android.view.ViewGroup;
 import com.google.android.material.tabs.TabLayout;
 
 
+import rah.agahi.ketab.HomeAdapter;
 import rah.agahi.ketab.R;
-import rah.agahi.ketab.adapter.HomeAdapter;
+
 
 
 public class HomeFragment extends Fragment {
@@ -33,9 +34,10 @@ HomeAdapter homeAdapter;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        setUpView();
+
 
         view = inflater.inflate(R.layout.fragment_home, container, false);
+        setUpView();
 return view;
     }
 
@@ -45,6 +47,8 @@ return view;
         homeAdapter = new HomeAdapter(getChildFragmentManager());
         homeAdapter.addFragment(new IranianFragment(),"ایرانی");
         homeAdapter.addFragment(new ForeignFragment(),"خارجی");
+        viewPager.setAdapter(homeAdapter);
+        tabLayout.setupWithViewPager(viewPager);
     }
 
 }
