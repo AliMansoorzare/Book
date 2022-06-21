@@ -13,11 +13,11 @@
         android:layout_width="match_parent"
         android:layoutDirection="rtl"
         android:layout_height="50dp"
-        app:tabBackground="@android:color/darker_gray"
-        app:tabIndicatorColor="#f00"
+        app:tabBackground="@color/tab"
+        app:tabIndicatorColor="@color/base"
         android:background="@drawable/search_layout"
-        app:tabSelectedTextColor="#f00"
-        app:tabTextColor="#000" />
+        app:tabSelectedTextColor="@color/base"
+        app:tabTextColor="@color/white" />
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
