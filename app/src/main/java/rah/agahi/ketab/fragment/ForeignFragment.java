@@ -11,11 +11,12 @@ import androidx.fragment.app.Fragment;
 
 import rah.agahi.ketab.R;
 
-public class IranianFragment extends Fragment {
+public class ForeignFragment extends Fragment {
+    View view;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = LayoutInflater.from(getContext()).inflate(R.layout.fragment_iranian,container,false);
+        view = inflater.inflate(R.layout.fragment_foreign,container,false);
         return view;
     }
 }
