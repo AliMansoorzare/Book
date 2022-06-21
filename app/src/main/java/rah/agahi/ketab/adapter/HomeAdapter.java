@@ -1,4 +1,4 @@
-package rah.agahi.ketab;
+package rah.agahi.ketab.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
